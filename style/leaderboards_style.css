@@ -71,8 +71,13 @@ a.active img{
     border-radius: 10px;
     background: #363636;
 }
+.table-title{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-style: italic;
+}
 .table-leaderboard{
-	margin-top: 20px;
+	margin-top: 10px;
 	color: #fff;
 	cursor: pointer;
 }
