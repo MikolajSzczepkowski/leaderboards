@@ -6,6 +6,9 @@
 a.active img{ 
     background: #363636;
 }
+.leaderboard-menu a:nth-of-type(6) img{
+	margin-bottom: 30px;
+}
 .bottom-inner-wrapper{
 	padding: 0 20px
 }
