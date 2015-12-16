@@ -107,7 +107,7 @@
 				</nav>
 				<div class="col-xs-12 col-sm-10 bottom-main">
 					<div class="bottom-inner-wrapper">
-						<div class="games-slider">
+						<div id="gamesSlider" class="games-slider">
 							<ul>
 								<li>
 									<a href="#">
@@ -175,6 +175,17 @@
 								</li>
 							</ul>
 						</div>
+						<form name="search-leaderboard" id="searchLeaderboard" class="search-leaderboard row">
+							<div>
+								<input type="text" name="search-leaderboard-text" form="searchLeaderboard">
+							</div>
+							<label for="searchButton">
+								<input id="searchButton" type="submit" name="search-leaderboard-button" value="">
+								<span class="glyphicon glyphicon-search"></span>
+							</label>
+							<button id="search-leaderboard-user"><img src="images/leaderboard-user.gif"></button>
+							<button id="search-leaderboard-clan"><img src="images/leaderboard-friends.gif"></button>
+						</form>
 						<h3 id="tableTitle" class="table-title text-center">Battlefield 4 leaderboards</h3>
 						<table class="table table-leaderboard">
 							<thead>

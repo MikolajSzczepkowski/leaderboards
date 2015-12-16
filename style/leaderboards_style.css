@@ -39,6 +39,9 @@ a.active img{
     background: #fff;
     opacity: 0.7;
 }
+.img-holder:hover:after{
+	opacity: 0.5;
+}
 .current-game .img-holder:after{
     background: #e43f3f;
 }
@@ -53,7 +56,7 @@ a.active img{
 }
 .games-slider ul li a h5 span{
 	width: 164px;
-	padding-top: 20%;
+	margin-top: 20%;
 	position: absolute;
 	z-index: 2;
 	text-align: center;
@@ -106,6 +109,9 @@ a.active img{
 .table-leaderboard tbody tr:hover{
 	opacity: 0.5;
 }
+.table-leaderboard tbody tr.selected{
+	opacity: 0.5;
+}
 .table-leaderboard tr th:nth-child(even), .table tr td:nth-child(even){
 	background: #e43f3f;
 }
@@ -120,6 +126,35 @@ a.active img{
 }
 .table-progressbar-cover{
 	background: #e43f3f;
+}
+.search-leaderboard{
+	margin: 10px 0 0 0;
+}
+.search-leaderboard div{
+	display: inline-block;
+}
+.search-leaderboard label span{
+	color: #fff;
+	margin-left: 6px;
+	cursor: pointer;
+}
+.search-leaderboard label input{
+	width: 34px;
+	height: 26px;
+	margin: -3px 0 0 -3px;
+	position: absolute;
+	background: #363636;
+	border: 0;
+}
+.search-leaderboard button{
+	height: 26px;
+	border: 1px solid #e43f3f;
+	background: #e43f3f;
+}
+.search-leaderboard button:nth-of-type(1){
+	margin: 0 5px 0 15px;
+	border: 1px solid #363636;
+	background: #363636;
 }
 @media screen and (min-width: 640px){
 	.table-leaderboard thead tr th:nth-of-type(1){

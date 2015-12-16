@@ -13,4 +13,16 @@ $(function (){
 			$("#changeOrder").toggleClass("change-order");
 		}
 	});
+	$(document).on("click", "#gamesSlider ul li", function(){
+		if (!$(this).hasClass("current-game")) {
+			$("#gamesSlider ul li").removeClass("current-game");
+			$(this).addClass("current-game");
+		}
+	});
+	$(document).on("click", ".table-leaderboard tbody tr", function(){
+		if (!$(this).hasClass("selected")) {
+			$(".table-leaderboard tbody tr").removeClass("selected");
+			$(this).addClass("selected");
+		}
+	});
 });
