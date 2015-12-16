@@ -9,6 +9,9 @@ a.active img{
 .leaderboard-menu a:nth-of-type(6) img{
 	margin-bottom: 30px;
 }
+.leaderboard-menu a:hover img{
+	opacity: 0.5;
+}
 .bottom-inner-wrapper{
 	padding: 0 20px
 }
