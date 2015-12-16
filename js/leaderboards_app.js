@@ -25,4 +25,22 @@ $(function (){
 			$(this).addClass("selected");
 		}
 	});
+	$(document).on("click", ".leaderboard-menu #firstMenu a", function(){
+		if (!$(this).hasClass("active")) {
+			$(".leaderboard-menu #firstMenu a").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
+	$(document).on("click", ".leaderboard-menu #secondMenu a", function(){
+		if (!$(this).hasClass("active")) {
+			$(".leaderboard-menu #secondMenu a").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
+	$(document).on("click", ".search-leaderboard button", function(){
+		if (!$(this).hasClass("selected")) {
+			$(".search-leaderboard button").removeClass("selected");
+			$(this).addClass("selected");
+		}
+	});
 });

@@ -83,33 +83,55 @@
 		<div class="main-inner-wrapper">
 			<div class="row bottom-row">
 				<nav class="col-xs-12 col-sm-1 text-center leaderboard-menu">
-					<a href="#" class="active">
-						<img src="images/globe.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-user.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-add-user.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-user-star.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-clans.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-clans-star.png">
-					</a>
-					<a href="#" class="active">
-						<img src="images/globe.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-playstation.png">
-					</a>
-					<a href="#">
-						<img src="images/leaderboard-xbox.png">
-					</a>
+					<ul id="firstMenu">
+						<li>
+							<a href="#" class="active">
+								<img src="images/globe.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-user.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-add-user.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-user-star.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-clans.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-clans-star.png">
+							</a>
+						</li>
+					</ul>
+					<ul id="secondMenu">
+						<li>
+							<a href="#" class="active">
+								<img src="images/globe.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-playstation.png">
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/leaderboard-xbox.png">
+							</a>
+						</li>
+					</ul>
 				</nav>
 				<div class="col-xs-12 col-sm-10 bottom-main">
 					<div class="bottom-inner-wrapper">
@@ -189,19 +211,19 @@
 								<input id="searchButton" type="submit" name="search-leaderboard-button" value="">
 								<span class="glyphicon glyphicon-search"></span>
 							</label>
-							<button id="search-leaderboard-user"><img src="images/leaderboard-user.png"></button>
+							<button id="search-leaderboard-user" class="selected"><img src="images/leaderboard-user.png"></button>
 							<button id="search-leaderboard-clan"><img src="images/leaderboard-clans.png"></button>
 						</form>
 						<h3 id="tableTitle" class="table-title text-center">Battlefield 4 leaderboards</h3>
-						<table class="table table-leaderboard">
+						<table class="table table-leaderboard text-center">
 							<thead>
 								<tr>
 									<th>Place</th>
 									<th>Nick</th>
 									<th>Rank</th>
-									<th>Wins</th>
-									<th>Losses</th>
+									<th>Matches</th>
 									<th>W/L</th>
+									<th>Fame</th>
 									<th>Rating</th>
 								</tr>
 							</thead>
@@ -210,9 +232,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -223,9 +245,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -236,9 +258,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -249,9 +271,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -262,9 +284,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -275,9 +297,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -288,9 +310,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
@@ -301,9 +323,9 @@
 									<td>1st</td>
 									<td><a href="#">PSC-Paul</a></td>
 									<td>Rank 23</td>
-									<td>Wins 43</td>
-									<td>Looses 32</td>
+									<td>Matches 43</td>
 									<td>W/L 57%</td>
+									<td>Fame 69</td>
 									<td>
 										<div class="progress table-progressbar">
 											<div class="progress-bar table-progressbar-cover" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width:57%"></div>
