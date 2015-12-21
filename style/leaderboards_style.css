@@ -105,19 +105,19 @@ a.active img{
 .table-leaderboard a:hover{
 	color: #333;
 }
-.table-leaderboard .active{
-	color: #333;
-}
 .table-leaderboard thead{
 	border-bottom: 10px solid #fff;
 }
 .table-leaderboard thead tr th{
 	text-align: center;
 }
-.table-leaderboard thead tr th.active img{
+.table-leaderboard thead tr th:hover{
+	background: #d8d8d8;
+}
+.table-leaderboard thead tr th.current img{
 	margin: -10px -34px -4px 0; 
 }
-.table-leaderboard thead tr th.active img.change-order{
+.table-leaderboard thead tr th.current img.change-order{
 	-ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
