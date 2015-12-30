@@ -1,10 +1,11 @@
 .main-inner-wrapper {
-    padding: 20px 20px;
+    padding: 20px 20px 0 20px;
 }
 .leaderboard-menu ul{
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	display: inline-block;
 }
 .leaderboard-menu a img{ 
 	width: 78px;
@@ -115,13 +116,13 @@ a.active img{
 	background: #d8d8d8;
 }
 .table-leaderboard thead tr th.current img{
-	margin: -10px -34px -4px 0; 
+	margin: -10px -32px -4px 0; 
 }
 .table-leaderboard thead tr th.current img.change-order{
 	-ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-    margin: -6px -34px -8px 0; 
+    margin: -6px -32px -8px 0; 
 }
 .table-leaderboard tbody tr:hover{
 	opacity: 0.5;
@@ -173,11 +174,16 @@ a.active img{
 	border: 1px solid #363636;
 }
 .search-leaderboard button:nth-of-type(1){
-	margin: 0 5px 0 15px;
+	margin: 5px 5px 0 0;
 }
 .search-leaderboard button.selected{
 	background: #363636;
 	border: 1px solid #363636;
+}
+@media screen and (min-width: 420px){
+	.search-leaderboard button:nth-of-type(1){
+		margin: 0 5px 0 15px;
+	}
 }
 @media screen and (min-width: 640px){
 	.table-leaderboard thead tr th:nth-of-type(1){
