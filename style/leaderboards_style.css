@@ -124,7 +124,16 @@ a.active img{
     transform: rotate(180deg);
     margin: -6px -32px -8px 0; 
 }
-.table-leaderboard tbody tr:hover{
+.table-leaderboard tbody tr td:last-child{
+	margin: 20px 0 0 -40px;
+	border: none;
+	position: absolute;
+	background: none;
+}
+.table-leaderboard tbody tr:hover td:last-child{
+	opacity: 1;
+}
+.table-leaderboard tbody tr:hover td{
 	opacity: 0.5;
 }
 .table-leaderboard tbody tr.selected{
@@ -137,10 +146,20 @@ a.active img{
 	background: #363636;
 }
 .table-progressbar{
+	height: 3px;
 	margin-top: 8px;
 	margin-bottom: -8px;
-	height: 3px;
+	position: relative;
     background: #d8d8d8;
+}
+.table-leaderboard tbody tr td span{
+	margin: 0 0 0 -15px;
+	position: absolute;
+	opacity: 0;
+	z-index: 2;
+}
+.table-leaderboard tbody tr td:hover + td span{
+	opacity: 1;
 }
 .table-progressbar-cover{
 	background: #e43f3f;
@@ -150,6 +169,9 @@ a.active img{
 }
 .search-leaderboard div{
 	display: inline-block;
+}
+.search-leaderboard div input{
+	padding: 1px 5px;
 }
 .search-leaderboard label span{
 	color: #fff;
@@ -189,6 +211,9 @@ a.active img{
 	.table-leaderboard thead tr th:nth-of-type(1){
 		padding-right: 20px;
 	}
+	.table-leaderboard tbody tr td:last-child{
+		margin: 0 0 0 -45px;
+	}
 }
 @media screen and (min-width: 768px){
 	.leaderboard-menu{
@@ -212,6 +237,9 @@ a.active img{
 	.leaderboard-menu a img{
 		width: 78px;
 	}
+	.table-leaderboard tbody tr td:last-child{
+		margin: 0 0 0 -60px;
+	}
 }
 @media screen and (min-width: 1024px){
 	.leaderboard-menu img{
@@ -224,5 +252,8 @@ a.active img{
 	}
 	.leaderboard-menu a img{
 		margin: 0 0 7px 0;
+	}
+	.table-leaderboard tbody tr td:last-child{
+		margin: 0 0 0 -70px;
 	}
 }

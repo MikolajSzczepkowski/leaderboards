@@ -36,5 +36,11 @@ $(function (){
 			$(".search-leaderboard button").removeClass("selected");
 			$(this).addClass("selected");
 		}
+		if ($("#search-leaderboard-user").hasClass("selected")) {
+			$("#searchLeaderboard div input").attr("placeholder","Search user...");
+		}
+		else if ($("#search-leaderboard-clan").hasClass("selected")) {
+			$("#searchLeaderboard div input").attr("placeholder","Search clan...");
+		}
 	});
 });
