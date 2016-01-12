@@ -54,7 +54,7 @@ a.active img{
     background: #fff;
     opacity: 0.7;
 }
-.img-holder:hover:after{
+.games-slider ul li:hover .img-holder:after{
 	opacity: 0.5;
 }
 .current-game .img-holder:after{
@@ -113,7 +113,7 @@ a.active img{
 	text-align: center;
 }
 .table-leaderboard thead tr th:hover{
-	background: #d8d8d8;
+	opacity: 0.5;
 }
 .table-leaderboard thead tr th.current img{
 	margin: -10px -32px -4px 0; 
@@ -158,7 +158,7 @@ a.active img{
 	opacity: 0;
 	z-index: 2;
 }
-.table-leaderboard tbody tr td:hover + td span{
+.table-leaderboard tbody tr:hover td span{
 	opacity: 1;
 }
 .table-progressbar-cover{

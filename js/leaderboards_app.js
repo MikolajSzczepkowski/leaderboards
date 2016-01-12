@@ -31,7 +31,8 @@ $(function (){
 			$(this).addClass("active");
 		}
 	});
-	$(document).on("click", ".search-leaderboard button", function(){
+	$(document).on("click", ".search-leaderboard button", function(e){
+		e.preventDefault();
 		if (!$(this).hasClass("selected")) {
 			$(".search-leaderboard button").removeClass("selected");
 			$(this).addClass("selected");
@@ -40,7 +41,7 @@ $(function (){
 			$("#searchLeaderboard div input").attr("placeholder","Search user...");
 		}
 		else if ($("#search-leaderboard-clan").hasClass("selected")) {
-			$("#searchLeaderboard div input").attr("placeholder","Search clan...");
+			$("#searchLeaderboard div input").attr("placeholder","Search team...");
 		}
 	});
 });
