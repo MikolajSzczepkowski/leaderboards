@@ -24,70 +24,8 @@ a.active img{
 .bottom-inner-wrapper{
 	padding: 0 10px 0 20px;
 }
-.games-slider{
-	overflow-x: scroll;
-}
-.games-slider ul{
-	list-style: none;
-	padding: 0;
-	white-space: nowrap;
-}
-.games-slider ul li{
-	display: inline-block;
-}
-.games-slider ul li a{
-	text-decoration: none;
-}
-.img-holder{
-	display:inline-block;
-	position: relative;
-}
-.img-holder:after{
-	content:'';
-	top: 0;
-	left: 0;
-	z-index: 1;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	background: #fff;
-	opacity: 0.7;
-}
-.games-slider ul li:hover .img-holder:after{
-	opacity: 0.5;
-}
 .current-game .img-holder:after{
 	background: #e43f3f;
-}
-.games-slider ul li.current-game a h5{
-	color: #fff;
-} 
-.games-slider ul li a h5{
-	margin: 0; 
-	color: #333;
-	font-weight: bold;
-	position: relative;
-}
-.games-slider ul li a h5 span{
-	width: 164px;
-	margin-top: 20%;
-	position: absolute;
-	z-index: 2;
-	text-align: center;
-}
-.games-slider::-webkit-scrollbar {
-	height: 7px;
-}
- 
-.games-slider::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-	border-radius: 10px;
-}
- 
-.games-slider::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background: #363636;
 }
 .table-title{
 	font-family: 'Open Sans', sans-serif;
