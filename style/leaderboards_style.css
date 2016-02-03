@@ -32,6 +32,9 @@ a.active img{
 	font-size: 14px;
 	font-style: italic;
 }
+.table-title span{
+	padding: 0 5px;
+}
 .table-leaderboard{
 	margin-top: 10px;
 	color: #fff;

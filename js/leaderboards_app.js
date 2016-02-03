@@ -19,17 +19,23 @@ $(function (){
 			$(this).addClass("current-game");
 		}
 	});
-	$(document).on("click", ".leaderboard-menu #firstMenu a", function(){
+	$(document).on("click", ".leaderboard-menu #firstMenu a", function(e){
+		e.preventDefault;
+		var title = $(this).attr("title");
 		if (!$(this).hasClass("active")) {
 			$(".leaderboard-menu #firstMenu a").removeClass("active");
 			$(this).addClass("active");
 		}
+		$("#playerCriterion").text(title);
 	});
-	$(document).on("click", ".leaderboard-menu #secondMenu a", function(){
+	$(document).on("click", ".leaderboard-menu #secondMenu a", function(e){
+		e.preventDefault;
+		var title = $(this).attr("title");
 		if (!$(this).hasClass("active")) {
 			$(".leaderboard-menu #secondMenu a").removeClass("active");
 			$(this).addClass("active");
 		}
+		$("#consoleCriterion").text(title);
 	});
 	$(document).on("click", ".search-leaderboard button", function(e){
 		e.preventDefault();
