@@ -14,10 +14,12 @@ $(function (){
 		}
 	});
 	$(document).on("click", "#chooseGameSlider ul li", function(){
+		var title = $(this).find("a h5 span").text();
 		if (!$(this).hasClass("current-game")) {
 			$("#chooseGameSlider ul li").removeClass("current-game");
 			$(this).addClass("current-game");
 		}
+		$("#gameCriterion").text(title);
 	});
 	$(document).on("click", ".leaderboard-menu #firstMenu a", function(e){
 		e.preventDefault;
