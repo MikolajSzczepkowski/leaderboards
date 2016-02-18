@@ -50,6 +50,9 @@ a.active img{
 .table-leaderboard thead{
 	border-bottom: 10px solid #fff;
 }
+.table-leaderboard tfoot{
+	border-top: 10px solid #fff;
+}
 .table-leaderboard thead tr th{
 	text-align: center;
 }
@@ -62,13 +65,13 @@ a.active img{
 	transform: rotate(180deg);
 	margin: -6px -32px -8px 0; 
 }
-.table-leaderboard tbody tr td:last-child{
+.table-leaderboard tbody tr td:last-child, .table-leaderboard tfoot tr td:last-child{
 	margin: 20px 0 0 -40px;
 	border: none;
 	position: absolute;
 	background: none;
 }
-.table-leaderboard tbody tr:hover td:last-child{
+.table-leaderboard tbody tr:hover td:last-child, .table-leaderboard tfoot tr:hover td:last-child{
 	background: none;
 }
 .table-leaderboard tr th:nth-child(even), .table tr td:nth-child(even){
@@ -90,13 +93,13 @@ a.active img{
 	position: relative;
 	background: #d8d8d8;
 }
-.table-leaderboard tbody tr td span{
+.table-leaderboard tbody tr td span, .table-leaderboard tfoot tr td span{
 	margin: 0 0 0 -15px;
 	position: absolute;
 	opacity: 0;
 	z-index: 2;
 }
-.table-leaderboard tbody tr:hover td span{
+.table-leaderboard tbody tr:hover td span, .table-leaderboard tfoot tr:hover td span{
 	opacity: 1;
 }
 .table-progressbar-cover{
@@ -150,7 +153,7 @@ a.active img{
 	.table-leaderboard thead tr th:nth-of-type(1){
 		padding-right: 20px;
 	}
-	.table-leaderboard tbody tr td:last-child{
+	.table-leaderboard tbody tr td:last-child, .table-leaderboard tfoot tr td:last-child{
 		margin: 0 0 0 -45px;
 	}
 }
@@ -176,7 +179,7 @@ a.active img{
 	.leaderboard-menu a img{
 		width: 78px;
 	}
-	.table-leaderboard tbody tr td:last-child{
+	.table-leaderboard tbody tr td:last-child, .table-leaderboard tfoot tr td:last-child{
 		margin: 0 0 0 -60px;
 	}
 }
@@ -192,12 +195,18 @@ a.active img{
 	.leaderboard-menu a img{
 		margin: 0 0 7px 0;
 	}
-	.table-leaderboard tbody tr td:last-child{
+	.table-leaderboard tbody tr td:last-child, .table-leaderboard tfoot tr td:last-child{
 		margin: 0 0 0 -70px;
 	}
 }
 @-moz-document url-prefix(){
 	.search-leaderboard div input {
 		padding: 2px 5px;
+	}
+	.table-leaderboard thead tr th.current img {
+	    margin: -12px -32px -4px 0;
+	}
+	.table-leaderboard thead tr th.current img.change-order{
+		margin: -8px -32px -8px 0; 
 	}
 }
