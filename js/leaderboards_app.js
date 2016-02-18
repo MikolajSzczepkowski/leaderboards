@@ -5,7 +5,7 @@ $(function (){
 			$(".table-leaderboard thead tr th").removeClass("current");
 			$("#changeOrder").remove();
 			$(this).addClass("current");
-			if (pageWidth>=640) {
+			if (pageWidth>=990) {
 				$(this).append("<img id='changeOrder' src='images/arrow-up.png'>");
 			}
 		}
