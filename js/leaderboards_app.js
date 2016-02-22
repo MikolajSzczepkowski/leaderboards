@@ -52,4 +52,6 @@ $(function (){
 			$("#searchLeaderboard div input").attr("placeholder","Search team...");
 		}
 	});
+	$( "#userSearch" ).autocomplete({
+	});
 });
