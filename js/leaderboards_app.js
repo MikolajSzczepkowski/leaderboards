@@ -1,5 +1,52 @@
 $(function (){
 	var pageWidth = $(document).width();
+
+	$("#tableBody").sortable({
+		helper: function(e, tr)
+		{
+			var $originals = tr.children();
+			var $helper = tr.clone();
+			$helper.children().each(function(index)
+				{
+					$(this).width($originals.eq(index).width());
+				});
+			return $helper;
+		},
+		start: function(e, ui){
+			ui.helper.addClass("drag");
+		},
+		stop: function(e, ui){
+			ui.helper.removeClass("drag");
+		}
+	}).disableSelection();
+
+	$("#tableFoot").sortable({
+		connectWith: "#tableBody",
+		helper: function(e, tr)
+		{
+			var $originals = tr.children();
+			var $helper = tr.clone();
+			$helper.children().each(function(index)
+				{
+					$(this).width($originals.eq(index).width());
+				});
+			return $helper;
+		},
+		start: function(e, ui){
+			ui.helper.addClass("drag");
+		},
+		stop: function(e, ui){
+			ui.helper.removeClass("drag");
+		}
+	}).disableSelection();
+
+	$(document).on("scroll", function(){
+		var userRow1 = $(".table tr[data-position='1']"),
+			userRow2 = $(".table tr[data-position='2']"),
+			userRow3 = $(".table tr[data-position='3']");
+		$("#tableFoot").append(userRow1, userRow2, userRow3);
+	});
+
 	$(document).on("click", ".table-leaderboard thead tr th", function(){
 		if (!$(this).hasClass("current")) {
 			$(".table-leaderboard thead tr th").removeClass("current");
@@ -50,6 +97,12 @@ $(function (){
 		}
 		else if ($("#search-leaderboard-clan").hasClass("selected")) {
 			$("#searchLeaderboard div input").attr("placeholder","Search team...");
+		}
+	});
+	$(document).on("click", ".page-number a", function(){
+		if (!$(this).hasClass("active")) {
+			$(".page-number a").removeClass("active");
+			$(this).addClass("active");
 		}
 	});
 	$( "#userSearch" ).autocomplete({
