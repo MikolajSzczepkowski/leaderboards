@@ -56,10 +56,12 @@ a.active img{
 .table-leaderboard thead tr th{
 	text-align: center;
 }
-.table-leaderboard thead tr th.current img{
-	margin: -10px -32px -4px 0; 
+.table-leaderboard thead tr th img{
+	margin: -10px -32px -4px 0;
+	display: none;
+	opacity: 0;
 }
-.table-leaderboard thead tr th.current img.change-order{
+.table-leaderboard thead tr th img.change-order{
 	-ms-transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
@@ -181,6 +183,9 @@ a.active img{
 	}
 }
 @media screen and (min-width: 768px){
+	.leaderboard-menu ul:first-of-type{
+		margin-bottom: 28px;
+	}
 	.leaderboard-menu{
 		padding: 0;
 	}
@@ -205,6 +210,12 @@ a.active img{
 	.table-leaderboard tbody tr td:last-child, .table .user-row td:last-child{
 		margin: 0 0 0 -60px;
 	}
+	.table-leaderboard thead tr th img{
+		display: inline-block;
+	}
+	.table-leaderboard thead tr th.current img{
+		opacity: 1;
+	}
 }
 @media screen and (min-width: 1024px){
 	.leaderboard-menu img{
@@ -220,16 +231,5 @@ a.active img{
 	}
 	.table-leaderboard tbody tr td:last-child, .table .user-row td:last-child{
 		margin: 0 0 0 -70px;
-	}
-}
-@-moz-document url-prefix(){
-	.search-leaderboard div input {
-		padding: 2px 5px;
-	}
-	.table-leaderboard thead tr th.current img {
-	    margin: -12px -32px -4px 0;
-	}
-	.table-leaderboard thead tr th.current img.change-order{
-		margin: -8px -32px -8px 0; 
 	}
 }

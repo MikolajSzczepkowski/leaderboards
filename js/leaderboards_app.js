@@ -50,14 +50,10 @@ $(function (){
 	$(document).on("click", ".table-leaderboard thead tr th", function(){
 		if (!$(this).hasClass("current")) {
 			$(".table-leaderboard thead tr th").removeClass("current");
-			$("#changeOrder").remove();
 			$(this).addClass("current");
-			if (pageWidth>=990) {
-				$(this).append("<img id='changeOrder' src='images/arrow-up.png'>");
-			}
 		}
 		else {
-			$("#changeOrder").toggleClass("change-order");
+			$(this).find("img").toggleClass("change-order");
 		}
 	});
 	$(document).on("click", "#chooseGameSlider ul li", function(){
